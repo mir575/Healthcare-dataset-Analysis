@@ -50,4 +50,51 @@ Several steps were undertaken to clean the dataset and prepare it for analysis:
 
 4) Label Encoding and One-Hot Encoding: Categorical columns such as Gender, Medical Condition, and Test Results were converted to numerical format to prepare for machine learning tasks.
 
+**The original dataset contained about 55000 rows before cleaning. After Data Cleaning, The dataset now has 46236 rows.**
+
+**Visualizations**
+
+The following visualizations were created using Power BI to explore and present key insights from the dataset:
+
+**Gender Distribution by Blood Type**
+
+This bar chart displays the count of different blood types for both male and female patients. It helps in understanding the distribution of blood types across genders.
+
+![Power BI Desktop 9_8_2024 11_16_26 PMmm](https://github.com/user-attachments/assets/28fb0051-d51e-4034-a229-c29418f6fc84)
+
+**Test Results Breakdown**
+
+A stacked bar chart showing the distribution of different medical conditions (e.g., Diabetes, Cancer, Hypertension) categorized by admission type (Elective, Emergency, Urgent).
+
+![Power BI Desktop 9_8_2024 11_16_07 PMm](https://github.com/user-attachments/assets/cca86079-b16e-4e5e-9ffc-b0eb4b5a0e6e)
+
+
+**Gender Breakdown**
+
+A pie chart presenting the distribution of test results across the dataset, showing the proportion of patients with Normal, Abnormal, and Inconclusive test results and a pie chart that illustrates the gender split in the dataset, offering a quick snapshot of the male-to-female ratio.
+
+![Power BI Desktop 9_88_2024 11_16_07 PM](https://github.com/user-attachments/assets/f8238234-1fa2-4507-9f06-ca35ce04670d)
+
+**Binary Classification:**
+
+Predicting Test Results (Normal vs. Abnormal)
+
+![Jupyter Notebook - Notebook - Google Chrome 9_8_2024 11_48_14 PM](https://github.com/user-attachments/assets/7e195303-53bd-4a7d-a86d-31ab132e8962)
+
+**Data Preparation:**
+
+Label Encoding: It encodes the target variable Test Results for binary classification.
+
+One-Hot Encoding: Categorical columns like 'Gender', 'Blood Type', 'Medical Condition', etc., are transformed into numerical columns using one-hot encoding.
+
+Handling Missing Values: The code removes any rows with missing values using dropna().
+
+Feature Scaling: Numeric columns 'Age' and 'Billing Amount' are scaled using StandardScaler(), which is a common preprocessing step for machine learning.
+
+Splitting the Data: The dataset is split into training and testing sets using an 80/20 split ratio.
+
+The result is a training set with 21,541 rows and 25 features and a test set with 5,386 rows and 25 features.
+
+
+
 
